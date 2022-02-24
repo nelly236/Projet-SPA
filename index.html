@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Parfums pour les femmes, hommes et enfants">
+        <title>SITE VITRINE</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./bootstrap.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header id="header-top" class="haut-page">
+            <section>
+                <img class= "logo" src="./img/logo/LOGO-4.png" alt="logo du site">
+            </section>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <button class="btn btn-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Nos produits</button>
+                            <button class="btn btn-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Adresse</button>
+                            <button class="btn btn-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!------------------------------------------ main ----------------------------------------------------------------------------------->
+        <main>
+            <!----------------------- OFFCANVAS Nos produits --------------------------------------->
+            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Voici une gamme de produits proposés en boutique</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <!-------------------------- start Gallerie --------------------------------->
+                    <div class="row mw-0">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="./img/photos/jar turquoise.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/>
+
+                            <img src="./img/photos/fragrance-rose clair.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="./img/photos/calvin klein homme.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"/>
+
+                            <img src="./img/photos/chanel bleu.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/>
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="./img/photos/fragrance-purple.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea"/>
+
+                            <img src="./img/photos/angel.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"/>
+                        </div>
+                    </div>
+                        <!------------------------------ end Gallerie --------------------------------->
+                </div>
+            </div>
+            <!----------------------- FIN OFFCANVAS Nos produits --------------------------------------->
+            <!------------------------------------ OFFCANVAS Adresse ---------------------------------->
+            <div class="offcanvas offcanvas-left h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasTopLabel">Notre adresse et numéro de tél :</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="maps-1">
+                        <p>30, rue de la république</p>
+                        <p>01000 BOURG-EN-BRESSE</p>
+                        <P>04.74.45.26.31</P>
+                    </div>
+                    <!------------- Google maps -------------->
+                    <iframe id="iframeGMaps" src="https://maps.google.com/maps?q=bourg-en-bresse&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!----------------------- FIN OFFCANVAS Adresse --------------------------------------->
+            <!------------------------------------ OFFCANVAS Contact ---------------------------------->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Contactez-nous</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="contactez-nous">
+                        <p>Besoin d'aide, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+                        <form action="/page-traitement-donnees" method="post">
+                            <div>
+                                <label for="nom">Votre NOM et Prénom</label>
+                                <input type="text" id="nom" name="nom" placeholder="MARTIN" required>
+                            </div>
+                            <div>
+                                <label for="email">Votre adresse mail</label>
+                                <input type="mail" id="mail" name="mail" placeholder="monadresse@mail.com" required>
+                            </div>
+                            <div>
+                                <label for="sujet">Quel est le sujet de votre message ?</label>
+                                <select name="sujet" id="sujet" required>
+                                    <option value="" disabled selected hidden>Choisissir le sujet du message</option>
+                                    <option value="probleme-compte">Problème rencontrer sur le site</option>
+                                    <option value="question-produit">Question à propos d’un produit</option>
+                                    <option value="suivi-commande">Réclamations</option>
+                                    <option value="autre">Autre...</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message">Votre message</label>
+                                <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">Envoyer mon message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!----------------------- FIN OFFCANVAS Contact --------------------------------------->
+            <!------------------- vidéo accueil --------------------------------->
+            <video src="./vidéo/parfum.mp4" autoplay muted loop></video>
+
+            <!--------------- Container element parallax ------------------------------------>
+            <section class="row">
+                <div id="top-top" class="col-6 col-md-6">
+                        <img src="./img/boutique/in mag.jpg" class="img-thumbnail" alt="image de l'intérieur de la boutique de parfum">
+                </div>
+                <div class="col-6 col-md-6">
+                    <h2 class="titre-nous"> Qui sommes nous ?</h2>
+                    <p class="intro">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam nam eius. Corporis facilis vero, omnis explicabo, neque totam vitae nesciunt fugit quaerat inventore quae ipsa perspiciatis dolor dolore nulla! Placeat ab voluptate cum, voluptatem natus illum totam? Officia, placeat dolores
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div id="para1">
+                    <h2 class="titre-vitrine">Venez découvrir Notre boutique Effluences Ephémères</h2>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-12 col-md-4">
+                    <h2 class="titre-best-seller">Notre best seller du moment</h2>
+                </div>
+                <div id="middle" class="col-12 col-md-4">
+                    <img src="./img/photos/Gucci.jpg" class="rounded mx-auto d-block" alt="image d'une bouteille de parfum gucci">
+                </div>
+                <div class="col-12 col-md-4">
+                    <p class="text-best-seller">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam nam eius. Corporis facilis vero, omnis explicabo, neque totam vitae nesciunt fugit quaerat inventore quae ipsa perspiciatis dolor dolore nulla! Pl.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div id="para2">
+                    <h2 class="exclusive">Nos marques exclusives</h2>    
+                </div>
+            </section>
+            <section class="row">
+                <div id="text-team" class="col-12 col-md-6">  
+                    <h2 class="titre-team">Notre équipe pour vous accompagner dans vos choix</h2>
+                        <p class="text-equipe">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam nam eius. Corporis facilis vero, omnis explicabo, neque totam vitae nesciunt fugit quaerat inventore quae ipsa perspiciatis dolor dolore nulla! Placeat ab voluptate cum, voluptatem natus illum totam? Officia, placeat dolores obcaecati enim accusamus inventore laborum expedita odit! Ipsum, odit.
+                        </p>
+                </div>
+                <div id="team" class="col-12 col-md-6">
+                    <img src="./img/boutique/équipe boutique.jpg" class="rounded-float-end" alt="photo représentant le personnel féminin de la boutique de parfum">
+                </div>
+            </section>
+            
+        </main>
+                
+        <!----------------------------------------- footer ------------------------------------------------------------------------------------>
+
+        <footer>
+        <!---------------------- réseaux sociaux ---------------------->
+            <section class="row"> 
+                <div class="reseaux-sociaux">                      
+                    <div class="reseaux-sociaux-1 col-6">
+                        <h6>Suivez-nous</h6>
+                        <div class="footer-1-footer-2">
+                            <a href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noopener noreferrer" class="logo-1"></a>
+                        </div>
+                        <div class="footer-1-footer-2">
+                            <a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener noreferrer" class="logo-1"></a>
+                        </div>
+                        <div class="footer-1-footer-2">
+                            <a href="https://www.linkedin.com/" title="Linkedin" target="_blank" rel="noopener noreferrer" class="logo-1"></a>
+                        </div>
+                        <div class="footer-1-footer-2">
+                            <a href="https://instagram.com/" title="Instagram" target="_blank" rel="noopener noreferrer" class="logo-1"></a>
+                        </div>
+                        <div class="footer-1-footer-2">
+                            <a href="https://www.youtube.com/" title="Youtube" target="_blank" rel="noopener noreferrer" class="logo-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="zone-footer" class="row zone-footer-1">
+                <div class="footer-footer">
+                    <div class="contact col-12 col-md-4">
+                        <p itemprop="nom-entreprise" class="enseigne">EFFLUENCES EPHEMERES</p>
+                            <div itemscope="" itemtype="http://schema.org/PostalAddress" itemprop="address" class="contact-address">
+                                <p itemprop="adresse-rue">30, rue de la république</p>
+                                <p>
+                                    <span itemprop="code-postal">01000</span>
+                                    <span itemprop="ville">BOURG-EN-BRESSE</span>
+                                </p>
+                                <p itemprop="pays" class="fr">France</p>
+                            </div>
+                        <p class="numero-tel">
+                            <img src="./img/icônes/appel-telephonique.png" class="img-tél" target="_blank" alt="image représentant un combiné de téléphone">
+                            <a href="tel:+33474452631" itemprop="telephone">04 74 45 26 31</a>					
+                        </p>
+                    </div>
+                    <div class="horaires col-12 col-md-4">
+                        <p>Horaires d'ouverture de la boutique</p>
+                        <ul>
+                            <li>
+                                <span class="day"> Du Lundi au Samedi</span>
+                                <span class="hours">Non-stop de 09h30 à 19h00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--------------------- moyens de paiement ---------------------->   
+                    <div class="paiement-methodes-block col-12 col-md-4">
+                        <h4 class="titre-paiement">MOYENS DE PAIEMENT ACCEPTÉS</h4>
+                        <div>
+                            <img src="./img/paiement/visa-mastercard-122x38.gif" title="visa et mastercard" alt="image carte de paiement visa et mastercard">
+                        </div>
+                    </div>
+                </div>
+            
+
+            <!------------- flèche remonter en haut de la page ------------------------->
+
+            <div id="scroll-to-top">
+                <button type="button" class="btn btn-white" data-bs-toggle="tooltip" data-bs-html="true" title="Retour en haut">
+                    <a href="#top">
+                        <img src="./img/icônes/scrolltop.png" target="_blank" alt="Retour en haut de la page">
+                    </a>
+                </button>
+            </div>
+            
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+    </body>
+</html>

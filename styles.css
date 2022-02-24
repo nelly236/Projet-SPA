@@ -50,6 +50,8 @@ h6{
     color: white;
 }
 
+
+
   /*---------- adresse google maps -------------*/
 
 .maps-1{
@@ -297,6 +299,9 @@ main video{
     margin-left: 10px;
     margin-right: 10px;
     background-color: black;
+}
+.footer-1-footer-2{
+    background-image: url(./im);
 }
 .logo-1{
     color: white;
